@@ -1,22 +1,21 @@
 import React from 'react'
 import Head from 'next/head'
 
-import RocketseatLogo from '../assets/rocketseat.svg'
+import { DefaultLayout } from '../layout'
 
-import { Container } from '../styles/pages/Home'
-
-const Home: React.FC = () => {
+const IndexPage: React.FC = () => {
   return (
-    <Container>
+    <>
       <Head>
-        <title>Homepage</title>
+        <title>IndexPagepage</title>
       </Head>
 
-      <RocketseatLogo />
-      <h1>ReactJS Structure</h1>
-      <p>A ReactJS + Next.js structure made by Rocketseat.</p>
-    </Container>
+      <DefaultLayout>
+        <h1>ReactJS Structure</h1>
+        <p>A ReactJS + Next.js structure made by Rocketseat.</p>
+      </DefaultLayout>
+    </>
   )
 }
 
-export default Home
+export default IndexPage
