@@ -21,14 +21,23 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    "prettier"
-  ],
+  "plugins": ["react", "@typescript-eslint", "prettier", "import-helpers"],
   "rules": {
     "prettier/prettier": "error",
     "space-before-function-paren": "off",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          ["/^react$/", "/^next/"],
+          "module",
+          ["parent", "sibling", "index", "/^@shared/skylab/"],
+          ["/^~/"]
+        ],
+        "alphabetize": { "order": "ignore", "ignoreCase": true }
+      }
+    ]
   }
 }

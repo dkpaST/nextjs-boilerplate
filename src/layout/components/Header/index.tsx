@@ -1,7 +1,8 @@
 import React from 'react'
-import { Flex, Heading } from '@chakra-ui/react'
-import DarkModeSwitch from '../../../components/DarkModeSwitch'
 
+import { Flex, Heading } from '@chakra-ui/react'
+
+import DarkModeSwitch from '../../../components/DarkModeSwitch'
 import RocketseatLogo from '../../../assets/rocketseat.svg'
 
 const Header: React.FC = () => {

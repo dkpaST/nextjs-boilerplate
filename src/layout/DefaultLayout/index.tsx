@@ -1,8 +1,11 @@
-import { Stack } from '@chakra-ui/react'
 import React from 'react'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
+
+import { Stack } from '@chakra-ui/react'
+
 import { Container } from './styles'
+
+import Footer from '~/layout/components/Footer'
+import Header from '~/layout/components/Header'
 
 const DefaultLayout: React.FC = ({ children }) => {
   return (
