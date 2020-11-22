@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 
+import { Center, Heading, Text } from '@chakra-ui/react'
+
 import { DefaultLayout } from '../layout'
 
 const IndexPage: React.FC = () => {
@@ -11,8 +13,14 @@ const IndexPage: React.FC = () => {
       </Head>
 
       <DefaultLayout>
-        <h1>ReactJS Structure</h1>
-        <p>A ReactJS + Next.js structure made by Rocketseat.</p>
+        <Center flexDirection="column" alignSelf="center">
+          <Heading color="primary" as="h1">
+            ReactJS Structure
+          </Heading>
+          <Text color="violet">
+            A ReactJS + Next.js + Chakra UI structure made by DKPA.
+          </Text>
+        </Center>
       </DefaultLayout>
     </>
   )
